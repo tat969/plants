@@ -14,11 +14,17 @@
 
 .nav-link {
     font-family: Inika;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
     color: $color-link;
+    transition: all 0.4s;
 
+}
+
+.nav-link:hover {
+    color: $color-brand;
+    
 }

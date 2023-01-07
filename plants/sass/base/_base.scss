@@ -7,6 +7,25 @@ body {
     font-family: "Inter", "Verdana", sans-serif;
 }
 
+h1 {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $color-heading;
+    
+
+}
+
+h2 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: $color-additional;
+}
+
 h4 {
     font-size: 1.6rem;
 }
