@@ -1,0 +1,28 @@
+@mixin font ($size, $style, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    font-style: $style;
+}
+
+@mixin flex ($display:flex, $align:center, $justify: space-between) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;  
+}
+
+@mixin columns ($width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >* {
+        flex-basis: $width;
+    }
+}
+
+@mixin column-flex() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}

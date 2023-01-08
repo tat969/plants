@@ -85,54 +85,54 @@
         <div class="service__content">
           <h2 class="service__content-title">Service and our projects</h2>
           <div class="service__content-buttons">
-            <button class="button content-button">Gardens</button>
-            <button class="button content-button">Lawn</button>
-            <button class="button content-button">Planting</button>
+            <button class="button button_primary">Gardens</button>
+            <button class="button button_primary">Lawn</button>
+            <button class="button button_primary">Planting</button>
           </div>
         </div>
-        <div class="service__content-table">
-          <div class="service__content-items">
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+        <div class="service__table">
+          <div class="layout-3-column">
+            <div class="column__content-block">
+              <img src="../plants/assets/images/garden1.jpg" alt="garden care" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Garden care</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+            <div class="column__content-block">
+              <img src="../plants/assets/images/planting1.jpg" alt="Planting" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Planting</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+            <div class="column__content-block">
+              <img src="../plants/assets/images/lawn.jpg" alt="Lawn care" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Lawn care</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+            <div class="column__content-block">
+              <img src="../plants/assets/images/planting2.jpg" alt="Planting" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Planting</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+            <div class="column__content-block">
+              <img src="../plants/assets/images/garden2.jpg" alt="garden care" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Garden care</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
-            <div class="service__content-item">
-              <img src="#" alt="garden care" class="service__content-image" />
-              <h3 class="service__content-subtitle">Garden care</h3>
-              <span class="service__content-text"
-                >Lorem Ipsum has been the industry</span
-              >
+            <div class="column__content-block">
+              <img src="../plants/assets/images/planting3.jpg" alt="Planting" class="column__content-image">
+              <div class="column__content-info">
+                <h3 class="column__content-subtitle">Planting</h3>
+                <span class="column__content-text">Lorem Ipsum has been the industry</span>
+              </div>
             </div>
           </div>
         </div>
@@ -142,22 +142,48 @@
       <div class="wrapper">
         <div class="prices__wrapper">
           <div class="prices__rates">
-            <h2 class="prices__title"></h2>
-            <div class="prices__rates-items">
-              <button class="button button_ofrates">Basics</button>
-              <button class="button button_ofrates">Standard</button>
-              <details>
-                <summary>Pro care</summary>
-              </details>
-              <button class="button button_ofrates">Pro care</button>
+            <h2 class="prices__title">Prices</h2>
+            <div class="dropdown">
+              <div class="dropdown_wrapper">
+                <div class="dropdown__item">
+                  <div class="dropdown__button">
+                    <details class="">
+                      <summary class="dropdown_info">Basics</summary>
+                    </details>
+                  </div>
+                    <div class="arrow"></div>
+                </div>
+              </div>
+              <div class="dropdown_wrapper">
+                <div class="dropdown__item">
+                  <div class="dropdown__button">
+                    <details class="">
+                      <summary class="dropdown_info">Standard</summary>
+                    </details>
+                  </div>
+                    <div class="arrow"></div>
+                </div>
+              </div>
+              <div class="dropdown_wrapper">
+                <div class="dropdown__item">
+                  <div class="dropdown__button">
+                    <details class="">
+                      <summary class="dropdown_info">Pro care</summary>
+                    </details>
+                  </div>
+                    <div class="arrow"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="prices__contacts">
-            <h3 class="prices__contacts-title">
-              Our best gardeners are ready to help you
+            <h3 class="prices__title">
+              Our best <span class="text-colored">gardeners</span> are ready to help you
             </h3>
-            <button class="button content-button">Contact us</button>
-            <img src="#" alt="leafs" />
+            <div class="prices__contacts-info">
+              <button class="button button_primary button_contacted">Contact us</button>
+              <img src="../plants/assets/images/leafs_prices.jpg" alt="leafs">
+            </div>
           </div>
         </div>
       </div>

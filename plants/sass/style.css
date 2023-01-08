@@ -1,3 +1,19 @@
+.arrow:hover, .button, .nav-items .nav-item .nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.button, .logo-line, li a {
+  cursor: pointer;
+}
+
+.nav-items .nav-item .nav-link, .logo-line .logo-text, h2 {
+  font-family: "Inika";
+}
+
+.prices__title .text-colored, .welcome__info .text-colored {
+  color: #499A18;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -307,6 +323,18 @@ template {
   display: none;
 }
 
+section, main, header, footer, article {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
 /* inika-regular - latin */
 @font-face {
   font-family: "Inika";
@@ -359,19 +387,18 @@ body {
 }
 
 h1 {
-  font-family: Inter;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 5rem;
+  font-style: normal;
   color: #717171;
 }
 
 h2 {
-  font-family: "Inika";
-  font-style: normal;
+  font-size: 4rem;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
+  line-height: 5.2rem;
+  font-style: normal;
   color: #499A18;
 }
 
@@ -382,10 +409,8 @@ h4 {
 li {
   list-style: none;
 }
-
-a {
+li a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 .background-wrapper {
@@ -399,10 +424,9 @@ a {
 }
 
 .header {
-  padding: 52px 0px 62px 0px;
+  padding: 5.2rem 0rem 6.2rem 0rem;
 }
-
-.header__wrapper {
+.header .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -411,162 +435,287 @@ a {
 .logo-line {
   display: flex;
   align-items: baseline;
-  cursor: pointer;
+  justify-content: space-between;
+}
+.logo-line .logo-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  font-style: normal;
+  color: #000000;
 }
 
 .logo-img {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   background-image: url("../assets/icons/logo.svg");
-}
-
-.logo-text {
-  font-family: Inika;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #000000;
 }
 
 .welcome__content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 224px;
-  padding: 62px 0px 62px 0px;
-}
-
-.welcome__info {
-  width: 549px;
-}
-
-.welcome__info-text {
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 35px;
-  color: #636060;
-  padding: 42px 0px 48px 0px;
+  gap: 22.4rem;
+  padding: 6.2rem 0rem;
 }
 
 .welcome__background {
-  height: 407px;
-  width: 448px;
+  height: 40.7rem;
+  width: 44.8rem;
   background: url("../assets/images/leafs_welcome.png");
 }
 
-.text-colored {
-  color: #499A18;
+.welcome__info {
+  max-width: 54.9rem;
+}
+.welcome__info-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  font-style: normal;
+  color: #636060;
+  padding: 4.2rem 0rem 4.8rem;
 }
 
 .about__content {
   display: flex;
   align-items: center;
-  gap: 153px;
-  padding: 93px 0px 8px 0px;
+  justify-content: space-between;
+  gap: 15.3rem;
+  padding: 9.3rem 0rem 0.8rem;
 }
 
 .about__info {
-  width: 60.5rem;
+  max-width: 60.5rem;
 }
-
-.about__info-title {
-  width: 46.3rem;
+.about__info .about__info-title {
+  max-width: 46.3rem;
+}
+.about__info .about__info-title .heading-colored {
+  color: #E06733;
+}
+.about__info .about__info-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-style: normal;
+  color: #636060;
 }
 
 .about-image {
-  height: 479px;
-  width: 464px;
+  height: 47.9rem;
+  width: 46.4rem;
   background-image: url("../assets/images/houseplant.jpg");
-}
-
-.heading-colored {
-  color: #E06733;
-}
-
-.about__info-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #636060;
 }
 
 .service {
   background: #EDF2EC;
-  padding: 40px 0px 121px 0px;
+  padding: 4rem 0rem 12.1rem;
 }
 
 .service__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-
-.service__content-title {
-  width: 30.6rem;
+.service__content .service__content-title {
+  max-width: 30.6rem;
 }
-
-.service__content-buttons {
+.service__content .service__content-buttons {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 3.8rem;
+}
+
+.prices__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem 11.5rem;
+}
+
+.prices__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 45.2rem;
+  text-align: right;
+}
+
+.prices__title {
+  font-family: "Inter", "Verdana", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  font-style: normal;
+  color: #000000;
+}
+.prices__contacts-info {
+  margin-left: 29rem;
 }
 
 .nav-items {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.nav-items:last-child {
-  padding: 0px;
+.nav-items .nav-item {
+  padding-right: 4.6rem;
 }
-
-.nav-item {
-  padding-right: 46px;
+.nav-items .nav-item:last-child {
+  padding-right: 0px;
 }
-
-.nav-link {
-  font-family: Inika;
+.nav-items .nav-item .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 5rem;
+  font-style: normal;
   color: #010201;
-  transition: all 0.4s;
 }
-
-.nav-link:hover {
+.nav-items .nav-item .nav-link:hover {
   color: #E06733;
 }
 
 .button {
   border: 2px solid #E06733;
   border-radius: 10px;
-  transition: all 0.3s;
-  cursor: pointer;
 }
-
 .button:hover {
   background-color: #E06733;
   color: lightcyan;
 }
-
 .button_bordered {
   font-family: "Inter";
-  font-style: normal;
+  font-size: 1.6rem;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 14px 27px;
+  line-height: 2rem;
+  font-style: normal;
+  padding: 1.4rem 2.7rem;
 }
-
-.content-button {
+.button_primary {
   width: 16.1rem;
-  padding: 12px 0px 12px 0px;
+  padding: 1.2rem 0rem;
   color: #E06733;
   text-align: center;
+}
+.button_contacted {
+  margin: 3.8rem 0rem 3.9rem 0rem;
+  background-color: white;
+}
+
+.service__table {
+  padding: 9rem 0rem 0rem;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 55px;
+}
+.layout-3-column > * {
+  flex-basis: 31%;
+}
+
+.column__content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column__content-image {
+  border-radius: 23px 23px 0px 0px;
+  object-fit: cover;
+}
+
+.column__content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0px 0px 23px 23px;
+  border: 1px solid #E3E1D5;
+  padding: 1rem 3.1rem 3.6rem;
+  gap: 1rem;
+}
+.column__content-info .column__content-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-style: normal;
+  color: #E06733;
+}
+.column__content-info .column__content-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  font-style: normal;
+  color: #717171;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding: 3.4rem 4.1rem;
+  border-radius: 20px;
+  border: 1px solid #E3E1D5;
+  gap: 3.2rem;
+}
+
+.dropdown_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 25rem;
+  padding: 1.6rem 11rem 1.6rem 4rem;
+  background: #EDF2EC;
+  border-radius: 20px;
+}
+
+.dropdown__item {
+  display: flex;
+  gap: 55px;
+}
+.dropdown__item .dropdown_info {
+  width: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-style: normal;
+  color: #000000;
+  text-align: left;
+}
+
+.arrow {
+  display: inline-flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(189, 188, 188);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #717171;
+  border-right: 2px solid #717171;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  transform: rotate(135deg);
+}
+.arrow:hover {
+  transform: rotate(-180deg);
 }
 
 /*# sourceMappingURL=style.css.map */

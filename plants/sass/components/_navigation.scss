@@ -1,30 +1,30 @@
 .nav-items {
-    display: flex;
+    @include flex();
 
-}
-
-.nav-items:last-child {
-    padding: 0px;
-}
-
-.nav-item {
-    padding-right: 46px;
-}
-
-
-.nav-link {
-    font-family: Inika;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-link;
-    transition: all 0.4s;
-
-}
-
-.nav-link:hover {
-    color: $color-brand;
+    .nav-item {
+        padding-right: 4.6rem;
     
+        &:last-child {
+            padding-right: 0px;
+        }
+
+        .nav-link {
+            @extend %font-add;
+            @include font(1.6rem,normal, 400, 5rem);
+            color: $color-link;
+            @extend %transition;
+
+            &:hover {
+                color: $color-brand;
+            }
+        
+        }
+        
+    }
+
 }
+
+
+
+
+

@@ -1,34 +1,25 @@
 .header {
-    padding: 52px 0px 62px 0px;
-}
-
-.header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 5.2rem 0rem 6.2rem 0rem;
+    .header__wrapper {
+        @include flex();
+    }
 }
 
 .logo-line {
-    display: flex;
-    align-items: baseline;
-    cursor: pointer;
+    @extend %cursor;
+    @include flex($align:baseline);
+
+    .logo-text {
+        @extend %font-add;
+        @include font(1.6rem, normal, 400, 2.1rem);
+        color: $color-text-additional;
+    }
+
 }
 
 .logo-img {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     background-image: url("../assets/icons/logo.svg");
 }
 
-.logo-text {
-    font-family: Inika;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-text-additional;
-
-
-
-}

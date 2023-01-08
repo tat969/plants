@@ -8,21 +8,14 @@ body {
 }
 
 h1 {
-    font-family: Inter;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 50px;
+    @include font(4.5rem, normal, 700, 5rem);
     color: $color-heading;
     
-
 }
 
 h2 {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    @include font(4rem, normal, 400, 5.2rem);
+    @extend %font-add;
     color: $color-additional;
 }
 
@@ -33,10 +26,10 @@ h4 {
 
 li {
     list-style: none;
+    a {
+        text-decoration: none;
+        @extend %cursor;
+    }
 
 }
  
-a {
-    text-decoration: none;
-    cursor: pointer;
-}

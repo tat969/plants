@@ -1,34 +1,37 @@
 .welcome__content {
-  display: flex;
-  justify-content: space-between;
-  gap: 224px;
-  padding: 62px 0px 62px 0px;
-}
-
-.welcome__info {
-  width: 549px;
-}
-
-.welcome__info-text {
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 35px;
-  color: $color-text-primary;
-  padding: 42px 0px 48px 0px;
-
+  @include flex();
+  gap: 22.4rem;
+  padding: 6.2rem 0rem;
 
 }
 
 .welcome__background {
-  height: 407px;
-  width: 448px;
+  height: 40.7rem;
+  width: 44.8rem;
   background: url("../assets/images/leafs_welcome.png");
 
+}
+
+.welcome__info {
+  max-width: 54.9rem;
+
+  .text-colored {
+    @extend %text-colored;
+  }
+
+}
+
+.welcome__info-text {
+  @include font(2rem, normal, 400, 3.5rem);
+  color: $color-text-primary;
+  padding: 4.2rem 0rem 4.8rem;
   
 }
 
 
-.text-colored {
-  color: $color-additional;
-}
+
+
+
+
+
+

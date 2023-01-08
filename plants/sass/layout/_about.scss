@@ -1,34 +1,39 @@
 .about__content {
-    display: flex;
-    align-items: center;
-    gap: 153px;
-    padding: 93px 0px 8px 0px;
+    @include flex();
+    gap: 15.3rem;
+    padding: 9.3rem 0rem 0.8rem;
+
 }
 
 .about__info {
-    width: 60.5rem;
-}
+    max-width: 60.5rem;
 
-.about__info-title {
-    width: 46.3rem;
+    .about__info-title {
+        max-width: 46.3rem;
+
+        .heading-colored {
+            color: $color-brand;
+        }
+    }
+
+    .about__info-text {
+        @include font(2rem, normal, 400, 3rem);
+        color: $color-text-primary;
+    }
 }
 
 .about-image {
-    height: 479px;
-    width: 464px;
+    height: 47.9rem;
+    width: 46.4rem;
     background-image: url("../assets/images/houseplant.jpg");
 
 }
 
-.heading-colored {
-    color: $color-brand;
-}
 
-.about__info-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: $color-text-primary;
-}
+
+
+
+
+
+
+
