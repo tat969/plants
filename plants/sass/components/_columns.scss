@@ -1,0 +1,40 @@
+.service__table {
+    padding: 9rem 0rem 0rem;
+}
+
+.layout-3-column {
+    @include columns($width: 31%);
+    row-gap: 55px;
+}
+
+.column__content-block {
+    @include column-flex();
+   
+}
+
+.column__content-image {
+  border-radius: 23px 23px 0px 0px;
+  object-fit: cover;
+}
+
+.column__content-info {
+    @include column-flex();
+    border-radius: 0px 0px 23px 23px;
+    border: 1px solid #E3E1D5;
+    padding: 1rem 3.1rem 3.6rem;
+    gap: 1rem;
+
+    .column__content-subtitle {
+        @include font (2rem, normal, 700, 2rem);
+        color: $color-brand;
+       
+    }
+
+    .column__content-text {
+        @include font(1.6rem, normal, 400, 2rem);
+        color: $color-heading;
+    }
+}
+
+
+

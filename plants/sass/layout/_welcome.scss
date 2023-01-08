@@ -1,0 +1,37 @@
+.welcome__content {
+  @include flex();
+  gap: 22.4rem;
+  padding: 6.2rem 0rem;
+
+}
+
+.welcome__background {
+  height: 40.7rem;
+  width: 44.8rem;
+  background: url("../assets/images/leafs_welcome.png");
+
+}
+
+.welcome__info {
+  max-width: 54.9rem;
+
+  .text-colored {
+    @extend %text-colored;
+  }
+
+}
+
+.welcome__info-text {
+  @include font(2rem, normal, 400, 3.5rem);
+  color: $color-text-primary;
+  padding: 4.2rem 0rem 4.8rem;
+  
+}
+
+
+
+
+
+
+
+
