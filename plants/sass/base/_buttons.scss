@@ -11,19 +11,26 @@
     
     &_bordered {
         font-family: 'Inter';
-        @include font(1.6rem, normal, 400, 2rem);
-        padding: 1.4rem 2.7rem;
+        @include font(1.5rem, normal, 400, 2rem);
+        text-align: center;
+        padding: 6px 19px 8px 18px;
+        margin-right: 4px;
     }
 
     &_primary {
-        width: 16.1rem;
-        padding: 1.2rem 0rem;
+        width: 15rem;
+        padding: 1rem 0rem;
         color: $color-brand;
         text-align: center;
+        @extend %font-add;
+        @include font (17px, normal, 400, 26px);
+       
+
     }
 
     &_contacted {
-        margin: 3.8rem 0rem 3.9rem 0rem;
+        margin: 3.5rem 0rem 2.2rem 0rem;
+        padding: 10px 0px 7px;
         background-color: white;
     }
     

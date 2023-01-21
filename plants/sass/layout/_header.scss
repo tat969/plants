@@ -1,25 +1,12 @@
 .header {
-    padding: 5.2rem 0rem 6.2rem 0rem;
+    padding: 2.9rem 0rem 6.2rem 2rem;
     .header__wrapper {
-        @include flex();
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 520px;
     }
 }
 
-.logo-line {
-    @extend %cursor;
-    @include flex($align:baseline);
 
-    .logo-text {
-        @extend %font-add;
-        @include font(1.6rem, normal, 400, 2.1rem);
-        color: $color-text-additional;
-    }
-
-}
-
-.logo-img {
-    width: 2rem;
-    height: 2rem;
-    background-image: url("../assets/icons/logo.svg");
-}
 

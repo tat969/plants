@@ -1,0 +1,33 @@
+.contacts {
+  background: $color-background;
+  
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 53px 0px 0px 43px;
+  
+}
+
+.contacts-content {
+  @include column-flex();
+  padding-top: 4.5rem;
+  margin-left: 6rem;
+
+  //gap: 37.2rem;
+}
+
+.contacts-title {
+  @include font (3.8rem, normal, 700, 5.2rem);
+  margin-left: 80px;
+  
+}
+
+.contacts__image {
+  width: 390px;
+  height: 445px;
+}
+
+

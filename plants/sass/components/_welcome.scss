@@ -1,0 +1,50 @@
+.welcome__content {
+  @include columns($width:45%);
+  padding: 0px 0px 40px 20px;
+
+
+}
+
+.welcome__background {
+  height: 407.3px;
+  width: 448.8px;
+  background: url("../assets/images/leafs_welcome.png");
+  background-repeat: no-repeat;
+  margin-left: 25px;
+
+}
+
+.welcome__info {
+  max-width: 54.9rem;
+  padding: 65px 0px 20px 0px;
+  
+
+  
+
+}
+
+.welcome__info-title {
+    margin-top: -10px;
+    font-size: 4.1rem;
+    padding-bottom: 29px;
+    
+
+  .text-colored {
+    @extend %text-colored;
+  }
+}
+
+.welcome__info-text {
+  @include font(1.8rem, normal, 400, 3.3rem);
+  color: $color-text-primary;
+  max-width: 490px;
+  padding-bottom: 45px;
+}
+
+
+
+
+
+
+
+

@@ -1,30 +1,42 @@
+.header__nav {
+   max-width: 452px;
+}
+
+
 .nav-items {
     @include flex();
-
-    .nav-item {
-        padding-right: 4.6rem;
+    //max-width: 45.6rem;
+    padding: 0px;
+    padding-top: 4px;
+    padding-left: 20px;
+    //padding-left: 550px;
+   
+   
     
-        &:last-child {
-            padding-right: 0px;
-        }
 
-        .nav-link {
-            @extend %font-add;
-            @include font(1.6rem,normal, 400, 5rem);
-            color: $color-link;
-            @extend %transition;
+}
 
-            &:hover {
-                color: $color-brand;
-            }
-        
-        }
-        
+.nav-item {
+    padding-right: 3.8rem;
+
+   
+    &:last-child {
+        padding-right: 0px;
     }
 
 }
 
+.nav-link {
+    @extend %font-add;
+    @include font(1.5rem,normal, 400, 3.8rem);
+    color: $color-link;
+    @extend %transition;
 
+    &:hover {
+        color: $color-brand;
+    }
+
+}
 
 
 

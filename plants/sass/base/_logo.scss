@@ -1,0 +1,18 @@
+.logo-line {
+    @extend %cursor;
+    @include flex($align:baseline);
+    margin-right: 10px;
+
+    .logo-text {
+        @extend %font-add;
+        @include font(1.5rem, normal, 400, 2rem);
+        color: $color-text-additional;
+    }
+
+}
+
+.logo-img {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../assets/icons/logo.svg");
+}
