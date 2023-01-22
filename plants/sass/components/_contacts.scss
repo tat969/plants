@@ -16,12 +16,19 @@
   padding-top: 4.5rem;
   margin-left: 6rem;
 
-  //gap: 37.2rem;
+  @include media-laptop {
+    margin-left: 0;
+  }
 }
 
 .contacts-title {
   @include font (3.8rem, normal, 700, 5.2rem);
   margin-left: 80px;
+
+
+  @include media-laptop {
+    margin-left: 0;
+  }
   
 }
 

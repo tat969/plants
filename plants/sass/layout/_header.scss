@@ -1,10 +1,16 @@
 .header {
     padding: 2.9rem 0rem 6.2rem 2rem;
-    .header__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 520px;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 520px;
+
+    @include media-content {
+        gap: 0;
     }
 }
 
