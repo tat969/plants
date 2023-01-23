@@ -15,6 +15,12 @@
         text-align: center;
         padding: 6px 19px 8px 18px;
         margin-right: 4px;
+
+        @include media-content {
+            margin-top: 263px;
+            padding: 11px 27px 10px;
+            
+        }
     }
 
     &_primary {
@@ -24,6 +30,12 @@
         text-align: center;
         @extend %font-add;
         @include font (17px, normal, 400, 26px);
+
+        @include media-content {
+            width: 16.2rem;
+            font-size: 20px;
+            line-height: 28px;
+        }
        
 
     }
@@ -32,6 +44,11 @@
         margin: 3.5rem 0rem 2.2rem 0rem;
         padding: 10px 0px 7px;
         background-color: white;
+
+        @include media-content {
+            margin-top: 2.8rem;
+            padding-top: 9px;
+        }
     }
     
 }

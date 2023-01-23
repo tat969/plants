@@ -54,8 +54,8 @@
                 We grow <span class="text-colored">plants</span> and give you oxygen
               </h1>
               <p class="welcome__info-text">
-                Lorem Ipsum is simply dummy text of the printing and <br>typesetting
-                industry. Lorem Ipsum has been the <br> industry's standard dummy
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the  industry's standard dummy
                 text ever since the 1500s.
               </p>
               <button class="button button_bordered">LEARN MORE</button>
@@ -98,42 +98,90 @@
           <div class="service__table">
             <div class="layout-3-column">
               <div class="column__content-block content-block-left">
-                <img src="../plants/assets/images/garden1.jpg" alt="garden care" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/garden1_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/garden1.jpg" alt="garden care" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Garden care</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
               <div class="column__content-block">
-                <img src="../plants/assets/images/planting1.jpg" alt="Planting" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting1_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting1.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Planting</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
               <div class="column__content-block content-block-right">
-                <img src="../plants/assets/images/lawn.jpg" alt="Lawn care" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/lawn_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/lawn.jpg" alt="Lawn care" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Lawn care</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
               <div class="column__content-block content-block-left">
-                <img src="../plants/assets/images/planting2.jpg" alt="Planting" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting2_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting2.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Planting</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
               <div class="column__content-block">
-                <img src="../plants/assets/images/garden2.jpg" alt="garden care" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/garden2_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/garden2.jpg" alt="garden care" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Garden care</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
               <div class="column__content-block content-block-right">
-                <img src="../plants/assets/images/planting3.jpg" alt="Planting" class="column__content-image">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting3_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting3.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
                 <div class="column__content-info">
                   <h3 class="column__content-subtitle">Planting</h3>
                   <span class="column__content-text">Lorem Ipsum has been the industry</span>
@@ -182,7 +230,7 @@
               </div>
             </div>
             <div class="prices__contacts">
-              <h3 class="prices__title">
+              <h3 class="prices__title prices__title_subtitle">
                 Our best <span class="text-colored">gardeners</span> are ready to help you
               </h3>
               <div class="prices__contacts-info">
@@ -196,20 +244,34 @@
       <section id="contacts-section" class="contacts">
         <div class="wrapper">
           <div class="contacts__wrapper">
-            <img src="../plants/assets/images/woman.png" alt="woman" class="contacts__image">
-            <h2 class="contacts-title">Contact us</h2>
+            <div class="contact-picture">
+              <picture>
+                <source
+                srcset="../plants/assets/images/woman_tablet.png"
+                media="(max-width: 1200px)"
+                >
+                <img src="../plants/assets/images/woman.png" alt="woman" class="contacts__image">
+              </picture>
+            </div>
+            <div class="contacts-info">
+              <h2 class="contacts-title">Contact us</h2>
             <div class="contacts-content">
-            <div class="select-wrapper">
-              <div class="select-form-button">
-                <select name="City" id="#" class="select-form" disabled>
-                  <option value="1" selected>City</option>
-                  <option value="2">Canandaigua, NY</option>
-                  <option value="3">New York City</option>
-                  <option value="4">Yonkers, NY</option>
-                  <option value="5">Sherrill, NY</option>
-                </select>
+            <div class="select__wrapper">
+              <div class="select__form">
+                <div class="select__form-item">
+                  <div class="select-button">
+                    <details class="">
+                      <summary class="select_subtitle">City</summary>
+                      <summary class="select_subtitle">Canandaigua, NY</summary>
+                      <summary class="select_subtitle">New York City</summary>
+                      <summary class="select_subtitle">Yonkers, NY</summary>
+                      <summary class="select_subtitle">Sherrill, NY</summary>
+                    </details>
+                  </div>
+                  <div class="arrow-select"></div>
+                </div>
               </div>
-              <div class="arrow-select"></div>
+            </div>
             </div>
             </div>
           </div>
@@ -229,7 +291,7 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__item">
+            <div class="footer__item footer__school-link">
               <a href="https://rs.school/js-stage0/" class="rss-link">Rolling Scopes School</a>
             </div>
             <div class="footer__item">
