@@ -21,23 +21,31 @@
             </div>
             <nav class="header__nav">
               <ul class="nav-items">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
+                <li class="nav-item home-item">
+                  <a href="../plants/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item about-item">
+                  <a href="#about-section" class="nav-link">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">About us</a>
+                  <a href="#service-section" class="nav-link">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Service</a>
+                  <a href="#price-section" class="nav-link">Price</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Price</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contacts</a>
+                  <a href="#contacts-section" class="nav-link">Contacts</a>
                 </li>
               </ul>
+              <div class="header__nav-close">
+                <span class="header_nav-close-line"></span>
+                <span class="header_nav-close-line"></span>
+              </div>
             </nav>
+            <div class="header-burger burger">
+              <span class="burger-line burger-line_first"></span>
+              <span class="burger-line burger-line_second"></span>
+            </div>
           </div>
         </div>
       </header>
@@ -51,7 +59,7 @@
               </h1>
               <p class="welcome__info-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the  industry's standard dummy
                 text ever since the 1500s.
               </p>
               <button class="button button_bordered">LEARN MORE</button>
@@ -60,180 +68,260 @@
         </div>
       </section>
     </div>
-    <section class="about">
-      <div class="wrapper">
-        <div class="about__content">
-          <div class="about__info">
-            <h2 class="about__info-title">
-              We are <span class="heading-colored">professional experienced</span> gardeners
-            </h2>
-            <p class="about__info-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-          </div>
-          <div class="about-image"></div>
-        </div>
-      </div>
-    </section>
-    <section class="service">
-      <div class="wrapper">
-        <div class="service__content">
-          <h2 class="service__content-title">Service and our projects</h2>
-          <div class="service__content-buttons">
-            <button class="button button_primary">Gardens</button>
-            <button class="button button_primary">Lawn</button>
-            <button class="button button_primary">Planting</button>
+    <main class="main">
+      <section  id="about-section" class="about">
+        <div class="wrapper">
+          <div class="about__content">
+            <div class="about__info">
+              <h2 class="about__info-title">
+                We are <span class="heading-colored">professional experienced</span> gardeners
+              </h2>
+              <p class="about__info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="about-image"></div>
           </div>
         </div>
-        <div class="service__table">
-          <div class="layout-3-column">
-            <div class="column__content-block">
-              <img src="../plants/assets/images/garden1.jpg" alt="garden care" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Garden care</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
-            </div>
-            <div class="column__content-block">
-              <img src="../plants/assets/images/planting1.jpg" alt="Planting" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Planting</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
-            </div>
-            <div class="column__content-block">
-              <img src="../plants/assets/images/lawn.jpg" alt="Lawn care" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Lawn care</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
-            </div>
-            <div class="column__content-block">
-              <img src="../plants/assets/images/planting2.jpg" alt="Planting" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Planting</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
-            </div>
-            <div class="column__content-block">
-              <img src="../plants/assets/images/garden2.jpg" alt="garden care" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Garden care</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
-            </div>
-            <div class="column__content-block">
-              <img src="../plants/assets/images/planting3.jpg" alt="Planting" class="column__content-image">
-              <div class="column__content-info">
-                <h3 class="column__content-subtitle">Planting</h3>
-                <span class="column__content-text">Lorem Ipsum has been the industry</span>
-              </div>
+      </section>
+      <section id="service-section" class="service">
+        <div class="wrapper">
+          <div class="service__content">
+            <h2 class="service__content-title">Service and our projects</h2>
+            <div class="service__content-buttons">
+              <button class="button button_primary">Gardens</button>
+              <button class="button button_primary">Lawn</button>
+              <button class="button button_primary">Planting</button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="prices">
-      <div class="wrapper">
-        <div class="prices__wrapper">
-          <div class="prices__rates">
-            <h2 class="prices__title">Prices</h2>
-            <div class="dropdown">
-              <div class="dropdown_wrapper">
-                <div class="dropdown__item">
-                  <div class="dropdown__button">
-                    <details class="">
-                      <summary class="dropdown_info">Basics</summary>
-                    </details>
-                  </div>
-                    <div class="arrow"></div>
+          <div class="service__table">
+            <div class="layout-3-column">
+              <div class="column__content-block content-block-left">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/garden1_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/garden1.jpg" alt="garden care" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Garden care</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
-              <div class="dropdown_wrapper">
-                <div class="dropdown__item">
-                  <div class="dropdown__button">
-                    <details class="">
-                      <summary class="dropdown_info">Standard</summary>
-                    </details>
-                  </div>
-                    <div class="arrow"></div>
+              <div class="column__content-block">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting1_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting1.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Planting</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
-              <div class="dropdown_wrapper">
-                <div class="dropdown__item">
-                  <div class="dropdown__button">
-                    <details class="">
-                      <summary class="dropdown_info">Pro care</summary>
-                    </details>
-                  </div>
-                    <div class="arrow"></div>
+              <div class="column__content-block content-block-right">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/lawn_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/lawn.jpg" alt="Lawn care" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Lawn care</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
+                </div>
+              </div>
+              <div class="column__content-block content-block-left">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting2_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting2.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Planting</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
+                </div>
+              </div>
+              <div class="column__content-block">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/garden2_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/garden2.jpg" alt="garden care" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Garden care</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
+                </div>
+              </div>
+              <div class="column__content-block content-block-right">
+                <div class="content-picture">
+                  <picture>
+                    <source
+                    srcset="../plants/assets/images/planting3_tablet.jpg"
+                    media="(max-width: 1200px)"
+                    >
+                    <img src="../plants/assets/images/planting3.jpg" alt="Planting" class="column__content-image">
+                  </picture>
+                </div>
+                <div class="column__content-info">
+                  <h3 class="column__content-subtitle">Planting</h3>
+                  <span class="column__content-text">Lorem Ipsum has been the industry</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="prices__contacts">
-            <h3 class="prices__title">
-              Our best <span class="text-colored">gardeners</span> are ready to help you
-            </h3>
-            <div class="prices__contacts-info">
-              <button class="button button_primary button_contacted">Contact us</button>
-              <img src="../plants/assets/images/leafs_prices.jpg" alt="leafs">
+        </div>
+      </section>
+      <section id="price-section" class="prices">
+        <div class="wrapper">
+          <div class="prices__wrapper">
+            <div class="prices__rates">
+              <h2 class="prices__title">Prices</h2>
+              <div class="dropdown">
+                <div class="dropdown_wrapper">
+                  <div class="dropdown__item">
+                    <div class="dropdown__button">
+                      <details class="">
+                        <summary class="dropdown_info">Basics</summary>
+                      </details>
+                    </div>
+                      <div class="arrow"></div>
+                  </div>
+                </div>
+                <div class="dropdown_wrapper">
+                  <div class="dropdown__item">
+                    <div class="dropdown__button">
+                      <details class="">
+                        <summary class="dropdown_info">Standard</summary>
+                      </details>
+                    </div>
+                      <div class="arrow"></div>
+                  </div>
+                </div>
+                <div class="dropdown_wrapper">
+                  <div class="dropdown__item">
+                    <div class="dropdown__button">
+                      <details class="">
+                        <summary class="dropdown_info">Pro care</summary>
+                      </details>
+                    </div>
+                      <div class="arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="prices__contacts">
+              <h3 class="prices__title prices__title_subtitle">
+                Our best <span class="text-colored">gardeners</span> are ready to help you
+              </h3>
+              <div class="prices__contacts-info">
+                <button class="button button_primary button_contacted">Contact us</button>
+                <img src="../plants/assets/images/leafs_prices.jpg" class="prices-image" alt="leafs">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="wrapper">
-        <div class="contacts__wrapper">
-          <img src="#" alt="woman" class="contacts__image" />
-          <select name="City" id="#">
-            <option value="1">Canandaigua, NY</option>
-            <option value="2">New York City</option>
-            <option value="3">Yonkers, NY</option>
-            <option value="4">Sherrill, NY</option>
-          </select>
+      </section>
+      <section id="contacts-section" class="contacts">
+        <div class="wrapper">
+          <div class="contacts__wrapper">
+            <div class="contact-picture">
+              <picture>
+                <source
+                srcset="../plants/assets/images/woman_tablet.png"
+                media="(max-width: 1200px)"
+                >
+                <source
+                srcset="../plants/assets/images/woman_mobile.png"
+                media="(max-width: 765px)"
+                >
+                <img src="../plants/assets/images/woman.png" alt="woman" class="contacts__image">
+              </picture>
+            </div>
+            <div class="contacts-info">
+              <h2 class="contacts-title">Contact us</h2>
+            <div class="contacts-content">
+            <div class="select__wrapper">
+              <div class="select__form">
+                <div class="select__form-item">
+                  <div class="select-button">
+                    <details class="">
+                      <summary class="select_subtitle">City</summary>
+                      <summary class="select_subtitle">Canandaigua, NY</summary>
+                      <summary class="select_subtitle">New York City</summary>
+                      <summary class="select_subtitle">Yonkers, NY</summary>
+                      <summary class="select_subtitle">Sherrill, NY</summary>
+                    </details>
+                  </div>
+                  <div class="arrow-select"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__wrapper">
           <div class="footer__items">
             <div class="footer__item">
-              <span class="footer__student-info footer__copyright">©</span>
-              <span class="footer__student-info footer__year">2022</span>
-              <span class="footer__student-info">
-                <a href="#" class="student-link">github</a>
-              </span>
+              <ul class="students-contacts">
+                <li class="footer__student-info footer__copyright">©</li>
+                <li class="footer__student-info footer__year">2022</li>
+                <li class="footer__student-info">
+                  <a href="https://github.com/tat969" class="student-link">github</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item footer__school-link">
+              <a href="https://rs.school/js-stage0/" class="rss-link">Rolling Scopes School</a>
             </div>
             <div class="footer__item">
-              <a href="#" class="rss-link">Rolling Scopes School</a>
-            </div>
-            <div class="footer__item">
-              <div class="footer__contacts">
-                <div class="footer__contacts">
-                  <a href="#" class="footer__link"></a>
-                </div>
-                <div class="footer__contacts">
-                  <a href="#" class="footer__link"></a>
-                </div>
-                <div class="footer__contacts">
-                  <a href="#" class="footer__link"></a>
-                </div>
-                <div class="footer__contacts">
-                  <a href="#" class="footer__link"></a>
-                </div>
-              </div>
+              <ul class="footer__contacts">
+                <li class="footer__contact insta-icon">
+                  <a href="#!" class="footer__link"></a>
+                </li>
+                <li class="footer__contact facebook-icon">
+                  <a href="#!" class="footer__link"></a>
+                </li>
+                <li class="footer__contact twitter-icon">
+                  <a href="#!" class="footer__link"></a>
+                </li>
+                <li class="footer__contact pinterest-icon">
+                  <a href="#!" class="footer__link"></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="src/js/index.js"></script>
 </html>

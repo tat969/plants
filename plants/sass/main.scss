@@ -7,21 +7,27 @@
 @import "base/normalize";
 @import "base/fonts";
 @import "base/base";
-
+@import "base/wrapper";
+@import "base/logo";
+@import "base/buttons";
+@import "base/forms";
+@import "base/hamburger";
 
 //Layout
 @import "layout/background";
-@import "layout/wrapper";
 @import "layout/header";
-@import "layout/welcome";
-@import "layout/about";
-@import "layout/service";
-@import "layout/prices";
+@import "layout/columns";
+@import "layout/footer";
 
 //Components
 @import "components/navigation";
-@import "components/buttons";
-@import "components/columns";
-@import "components/forms";
+@import "components/welcome";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
+@import "components/contacts";
+
+
+
 
 

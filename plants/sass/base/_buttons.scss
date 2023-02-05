@@ -1,0 +1,73 @@
+.button {
+    border: 2px solid $color-brand;
+    border-radius: 10px;
+    @extend %transition;
+    @extend %cursor;
+
+    &:hover {
+        background-color: $color-brand;
+        color: lightcyan;
+       }
+    
+    &_bordered {
+        font-family: 'Inter';
+        @include font(1.5rem, normal, 400, 2rem);
+        text-align: center;
+        padding: 6px 19px 8px 18px;
+        margin-right: 4px;
+
+        @include media-content {
+            margin-top: 263px;
+            padding: 11px 27px 10px;
+            @include font (10px, normal, 400, 20px);
+        }
+
+        @include media-mobile {
+            margin-top: 218px;
+            padding: 5px 16px 5px 18px;
+            
+        }
+    }
+
+    &_primary {
+        width: 15rem;
+        padding: 1rem 0rem;
+        color: $color-brand;
+        text-align: center;
+        @extend %font-add;
+        @include font (17px, normal, 400, 26px);
+
+        @include media-content {
+            width: 16.2rem;
+            @include font (20px, normal, 400, 28px);
+            
+        }
+
+        @include media-mobile {
+            width: 121px;
+            @include font (15px, normal, 400, 19.54px);
+            padding: 6.5px 0;
+            border: 1px solid;
+        }
+
+    }
+
+    &_contacted {
+        margin: 3.5rem 0rem 2.2rem 0rem;
+        padding: 10px 0px 7px;
+        background-color: white;
+
+        @include media-content {
+            margin-top: 2.8rem;
+            padding-top: 9px;
+        }
+
+        @include media-mobile {
+            margin-top: 2rem;
+        }
+    }
+    
+}
+
+
+

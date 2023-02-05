@@ -1,9 +1,10 @@
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    font-size: 2rem;
     font-family: "Inter", "Verdana", sans-serif;
 }
 
@@ -26,10 +27,15 @@ h4 {
 
 li {
     list-style: none;
-    a {
-        text-decoration: none;
-        @extend %cursor;
-    }
 
+}
+
+a {
+    text-decoration: none;
+    @extend %cursor;
+}
+
+img {
+    margin: 0;
 }
  

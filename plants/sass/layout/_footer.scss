@@ -1,0 +1,124 @@
+.footer__wrapper {
+    padding: 3.5rem 1.5rem 4rem 2rem;
+
+    @include media-content {
+        padding: 18px 0 0;
+    }
+ 
+    @include media-tablet {
+        padding: 5px 0 0;
+    }
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-content {
+        flex-direction: column;
+       
+    }
+
+    @include media-tablet {
+        margin-left: 2px;
+    }
+}
+
+
+
+.footer__student-info {
+    @include font (1.7rem, normal, 400, 5rem);
+    color: black;
+
+    @include media-content {
+        font-size: 2rem;
+    }
+    
+}
+
+.students-contacts {
+    @include flex();
+    gap: 20px;
+    margin: 0;
+
+    @include media-content {
+        padding: 0;
+        padding-right: 5px;
+        gap: 23px;
+    }
+
+    
+}
+
+.rss-link, .student-link {
+    color: black;
+    @include font (1.8rem, normal, 400, 4.9rem);
+    @extend %transition;
+    &:hover {
+        color: $color-brand;
+    }
+
+    @include media-content {
+        font-size: 2rem;
+    }
+}
+
+.footer__school-link {
+    margin-top: -10px;
+    padding: 0 5px 0 0;
+}
+
+
+
+.rss-link {
+    padding-left: 5px;
+
+    @include media-content {
+        padding-left: 0;
+    }
+}
+
+.footer__contacts {
+    @include flex();
+    gap: 15px;
+    padding: 0;
+    padding-right: 15px;
+
+    @include media-content {
+        padding-top: 3px;
+        padding-right: 5px;
+        gap: 20px;
+    }
+
+    @include media-tablet {
+        margin: 0;
+    }
+}
+
+
+.footer__contact {
+    width: 3.2rem;
+    height: 3.2rem;
+    @extend %cursor;
+}
+
+.insta-icon {
+    background: url("../assets/icons/instagram.svg");
+}
+
+.facebook-icon {
+    background: url("../assets/icons/facebook.svg");
+}
+
+.twitter-icon {
+    background: url("../assets/icons/twitter.svg");
+}
+
+.pinterest-icon {
+    background: url("../assets/icons/pinterest.svg");
+}
+
+.footer__link {
+    @extend %cursor;
+}

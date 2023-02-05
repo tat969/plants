@@ -1,0 +1,101 @@
+.service__table {
+  padding: 6.8rem 0rem 0rem 20px;
+  @include media-laptop {
+    padding-left: 0;
+  }
+
+  @include media-content {
+    padding: 3.7rem 5px 65px 0;
+  }
+
+  @include media-mobile {
+    padding: 3.7rem 0px 15px 25px;
+  }
+
+  @include media-mobile-small {
+    padding: 3.7rem 0px 15px;
+  }
+}
+
+.layout-3-column {
+  @include columns($width: 33%);
+  row-gap: 38px;
+
+  @include media-content {
+    @include columns($width: 31%);
+  }
+
+  @include media-mobile {
+    row-gap: 34px;
+  }
+}
+
+.column__content-block {
+  @include column-flex();
+}
+
+.column__content-image {
+  width: 305px;
+  height: 320px;
+  border-radius: 23px 23px 0px 0px;
+  object-fit: cover;
+  @include media-laptop {
+    width: 290px;
+  }
+
+  @include media-content {
+    width: 280px;
+    height: 350px;
+  }
+}
+
+.content-block-left {
+  padding-right: 64px;
+
+  @include media-laptop {
+    padding-right: 0;
+  }
+}
+
+.content-block-right {
+  padding-left: 54px;
+
+  @include media-laptop {
+    padding-left: 0;
+  }
+}
+
+.column__content-info {
+  @include column-flex();
+  border-radius: 0px 0px 23px 23px;
+  border: 1px solid #e3e1d5;
+  padding: 5px 3.1rem 3.6rem;
+  gap: 1rem;
+
+  @include media-content {
+    padding: 7px 3.4rem 2.4rem;
+  }
+}
+
+.column__content-subtitle {
+  @include font(1.9rem, normal, 700, 2rem);
+  color: $color-brand;
+  padding-bottom: 4px;
+
+  @include media-content {
+    font-size: 2rem;
+    margin-right: 10px;
+    padding-bottom: 3px;
+  }
+}
+
+.column__content-text {
+  @include font(1.4rem, normal, 400, 1.7rem);
+  color: $color-heading;
+
+  @include media-content {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 210px;
+  }
+}
