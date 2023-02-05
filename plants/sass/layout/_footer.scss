@@ -4,6 +4,10 @@
     @include media-content {
         padding: 18px 0 0;
     }
+ 
+    @include media-tablet {
+        padding: 5px 0 0;
+    }
 }
 
 .footer__items {
@@ -14,6 +18,10 @@
     @include media-content {
         flex-direction: column;
        
+    }
+
+    @include media-tablet {
+        margin-left: 2px;
     }
 }
 
@@ -81,6 +89,10 @@
         padding-top: 3px;
         padding-right: 5px;
         gap: 20px;
+    }
+
+    @include media-tablet {
+        margin: 0;
     }
 }
 

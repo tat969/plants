@@ -1,3 +1,5 @@
+//dropdown
+
 details > summary {
   list-style: none;
 }
@@ -16,6 +18,12 @@ details > summary {
     margin-top: 5.5rem;
     padding: 4rem 4rem 4.5rem 4rem;
     gap: 2.9rem;
+  }
+
+  @include media-mobile {
+    margin-top: 38px;
+    padding: 29px  22px 30px 17px;
+    gap: 15px;
   }
 }
 
@@ -36,6 +44,11 @@ details > summary {
     max-width: none;
     padding: 1.3rem 4rem 1.4rem 2.1rem;
   }
+
+  @include media-mobile {
+    padding: 13px 40px 15px 20px;
+    //padding: 13px 60px 14px 0px;
+  }
 }
 
 .dropdown__item {
@@ -46,7 +59,14 @@ details > summary {
     align-items: center;
     gap: 70px;
   }
+
+  @include media-mobile {
+    gap: 25px;
+    
+  }
 }
+
+
 
 .dropdown_info {
   width: 100px;
@@ -57,6 +77,12 @@ details > summary {
   @include media-content {
     font-size: 2rem;
     text-align: center;
+  }
+
+  @include media-mobile {
+    width: 80px;
+    @include font(15px, normal, 700, 20px);
+    
   }
 }
 
@@ -98,26 +124,40 @@ details > summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 450px;
   padding: 5px 430px 5px 20px;
+
+  @include media-tablet {
+    max-width: 300px;
+    padding: 5px 200px 5px 20px;
+    margin-top: 3rem;
+    margin-right: 0;
+    
+  }
+
+  @include media-mobile-small {
+    padding: 5px 30px 5px 10px;
+  }
 }
 
-.select__form{
+.select__form {
   border-radius: 0px;
   background-color: $color-background-form;
   color: $color-heading;
-  //padding: 5px 200px 5px 20px;
   @include font(2rem, normal, 400, 4rem);
   @extend %cursor;
-
-
-  @include media-content {
-    //padding: 5px 200px 5px 30px;
-  }
 
 
   .select__form-item {
     display: flex;
     align-items: center;
     gap: 337px;
+
+    @include media-tablet {
+      gap: 203px;
+    }
+
+    @include media-mobile-small {
+      gap: 150px;
+    }
   }
 
   .arrow-select {
@@ -142,12 +182,10 @@ details > summary {
       left: 7px;
       transform: rotate(135deg);
     }
-    
 
     &:hover {
       transform: rotate(-180deg);
       @extend %transition;
     }
-}
-
+  }
 }

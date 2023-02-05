@@ -4,6 +4,10 @@
     @include media-content {
         padding: 2.9rem 0;
     }
+
+    @include media-mobile {
+        padding: 18px 0;
+    }
     
 }
 

@@ -19,6 +19,12 @@
         @include media-content {
             margin-top: 263px;
             padding: 11px 27px 10px;
+            @include font (10px, normal, 400, 20px);
+        }
+
+        @include media-mobile {
+            margin-top: 218px;
+            padding: 5px 16px 5px 18px;
             
         }
     }
@@ -33,10 +39,16 @@
 
         @include media-content {
             width: 16.2rem;
-            font-size: 20px;
-            line-height: 28px;
+            @include font (20px, normal, 400, 28px);
+            
         }
-       
+
+        @include media-mobile {
+            width: 121px;
+            @include font (15px, normal, 400, 19.54px);
+            padding: 6.5px 0;
+            border: 1px solid;
+        }
 
     }
 
@@ -48,6 +60,10 @@
         @include media-content {
             margin-top: 2.8rem;
             padding-top: 9px;
+        }
+
+        @include media-mobile {
+            margin-top: 2rem;
         }
     }
     

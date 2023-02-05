@@ -7,6 +7,10 @@
     max-height: 780px;
     padding: 40px 0 0;
   }
+
+  @include media-mobile {
+    padding: 26px 0 35px;
+  }
 }
 
 .about__info {
@@ -43,6 +47,21 @@
     font-size: 3.5rem;
     position: absolute;
   }
+
+  @include media-tablet {
+    margin-left: 0;
+    @include font (25px, normal, 400, 30px);
+  }
+
+  @include media-mobile {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+
+  @include media-mobile-small {
+    margin: 0;
+  }
+
 }
 
 .about__info-text {
@@ -56,6 +75,12 @@
     font-size: 2rem;
     line-height: 30px;
   }
+
+  @include media-tablet {
+    @include font(15px, normal, 400, 25.3px);
+    padding-top: 80px;
+  }
+
 }
 
 .about-image {
@@ -69,5 +94,17 @@
     background-repeat: no-repeat;
     margin-top: 70px;
     margin-left: 210px;
+  }
+
+  @include media-tablet {
+    background: url("../assets/images/houseplant_mobile.png");
+    background-repeat: no-repeat;
+  }
+
+  @include media-mobile {
+    width: 150px;
+    height: 147px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 }

@@ -6,6 +6,15 @@
     @include media-content {
         padding: 3.5rem 0 8.8rem;
     }
+
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include media-mobile {
+        padding: 23px 0 19px;
+    }
     
 }
 
@@ -41,16 +50,28 @@
     padding-left: 15px;
    }
 
+   @include media-mobile {
+    @include font(25px, normal, 700, 30px);
+    text-align: center;
+    padding-left: 0px;
+   }
+
 }
 
 .prices__title_subtitle {
     @include media-content {
-        font-size:  25px;
-        line-height: 35px;
+        @include font(25px, normal, 700, 35px);
         padding-top: 105px;
         padding-left: 0;
         margin-left: 10px;
         max-width: 296px;
+    }
+
+    @include media-mobile {
+        max-width: 280px;
+        @include font(20px, normal, 700, 35px);
+        padding-top: 18px;
+        margin-left: 6px;
     }
 }
 
@@ -62,6 +83,17 @@
     
     @include media-content {
         margin-left: 15rem;
+    }
+
+    @include media-mobile {
+        margin-left: 0px;
+    }
+}
+
+
+.prices-image {
+    @include media-mobile {
+        display: none;
     }
 }
 
