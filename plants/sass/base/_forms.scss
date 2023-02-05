@@ -1,139 +1,191 @@
+//dropdown
+
 details > summary {
-    list-style: none;
-  }
+  list-style: none;
+}
 
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 6rem;
-    padding: 2.5rem 4rem 3rem 3rem;
-    border-radius: 20px;
-    border: 1px solid #E3E1D5;
-    gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 2.5rem 4rem 3rem 3rem;
+  border-radius: 20px;
+  border: 1px solid #e3e1d5;
+  gap: 2.5rem;
+
+  @include media-content {
+    margin-top: 5.5rem;
+    padding: 4rem 4rem 4.5rem 4rem;
+    gap: 2.9rem;
+  }
+
+  @include media-mobile {
+    margin-top: 38px;
+    padding: 29px  22px 30px 17px;
+    gap: 15px;
+  }
 }
 
 .dropdown_wrapper {
-    @include flex();
-    max-width: 25rem;
-    padding: 1.5rem 3rem 1.3rem 2rem;
-    background: $color-background; 
-    border-radius: 20px;
-    @extend %transition;
-    @extend %cursor;
-           
+  @include flex();
+  max-width: 25rem;
+  padding: 1.5rem 3rem 1.3rem 2rem;
+  background: $color-background;
+  border-radius: 20px;
+  @extend %transition;
+  @extend %cursor;
 
+  &:hover {
+    background-color: $color-background-form;
+  }
 
-    &:hover {
-        background-color: $color-background-form;
-    }
-    
+  @include media-content {
+    max-width: none;
+    padding: 1.3rem 4rem 1.4rem 2.1rem;
+  }
+
+  @include media-mobile {
+    padding: 13px 40px 15px 20px;
+    //padding: 13px 60px 14px 0px;
+  }
 }
 
 .dropdown__item {
-    display: flex;
-    gap: 55px;
+  display: flex;
+  gap: 55px;
 
-    .dropdown_info {
-        width: 100px;
-        @include font(1.7rem, normal, 700, 2rem);
-        color: $color-text-additional;
-        text-align: center;
-        
-    }
+  @include media-content {
+    align-items: center;
+    gap: 70px;
+  }
+
+  @include media-mobile {
+    gap: 25px;
+    
+  }
+}
+
+
+
+.dropdown_info {
+  width: 100px;
+  @include font(1.7rem, normal, 700, 2rem);
+  color: $color-text-additional;
+  text-align: center;
+
+  @include media-content {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @include media-mobile {
+    width: 80px;
+    @include font(15px, normal, 700, 20px);
+    
+  }
 }
 
 .arrow {
-    display: inline-flex;
-        position: relative;
-        width: 20px;
-        height: 20px;
-        background-color: rgb(189, 188, 188);
-        border-radius: 50%;
-        cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(189, 188, 188);
+  border-radius: 50%;
+  cursor: pointer;
 
-        &::before {
-            content: "";
-            width: 4px;
-            height: 4px;
-            border-top: 2px solid $color-heading;
-            border-right: 2px solid $color-heading;
-            display: inline-block;
-            position: absolute;
-            top: 5px;
-            left: 7px;
-            transform: rotate(135deg);
+  &::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-top: 2px solid $color-heading;
+    border-right: 2px solid $color-heading;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    transform: rotate(135deg);
+  }
 
-        } 
-        
-        &:hover {
-            transform: rotate(-180deg);
-            @extend %transition;
-           
-        }
+  &:hover {
+    transform: rotate(-180deg);
+    @extend %transition;
+  }
 }
 
+// select form in contacts section
+
+.select__wrapper {
+  margin-top: 3.4rem;
+  margin-right: 5px;
+  display: flex;
+  background-color: $color-background-form;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 450px;
+  padding: 5px 430px 5px 20px;
+
+  @include media-tablet {
+    max-width: 300px;
+    padding: 5px 200px 5px 20px;
+    margin-top: 3rem;
+    margin-right: 0;
+    
+  }
+
+  @include media-mobile-small {
+    padding: 5px 30px 5px 10px;
+  }
+}
+
+.select__form {
+  border-radius: 0px;
+  background-color: $color-background-form;
+  color: $color-heading;
+  @include font(2rem, normal, 400, 4rem);
+  @extend %cursor;
 
 
-
-.select-wrapper {
-    margin-top: 3.4rem;
-    display:flex;
+  .select__form-item {
+    display: flex;
     align-items: center;
-    background-color: $color-background-form;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   
+    gap: 337px;
 
-    
-    .select-form  {
-        appearance: none;
-        outline: none;
-        border: none;
-        border-radius: 0px;
-        background-color: $color-background-form;
-        color: $color-heading;
-        padding: 5px 190px 5px 20px;
-        @include font (2rem, normal, 400, 4rem);
-        @extend %cursor;
-
-        option {
-            width: 100%;
-        }
-
-}
-
-    
-    .arrow-select {
-        display: inline-flex;
-        position: relative;
-        width: 20px;
-        height: 20px;
-        background-color: rgb(189, 188, 188);
-        border-radius: 50%;
-        margin-right: 17px;
-        @extend %cursor;
-        
-        &::before {
-            content: "";
-            width: 4px;
-            height: 4px;
-            border-top: 2px solid #fff;
-            border-right: 2px solid #fff;
-            display: inline-block;
-            position: absolute;
-            top: 5px;
-            left: 7px;
-            transform: rotate(135deg);
-        }
+    @include media-tablet {
+      gap: 203px;
     }
-   
 
+    @include media-mobile-small {
+      gap: 150px;
+    }
+  }
 
+  .arrow-select {
+    display: inline-flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(189, 188, 188);
+    border-radius: 50%;
+    margin-right: 20px;
+    @extend %cursor;
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 7px;
+      transform: rotate(135deg);
+    }
+
+    &:hover {
+      transform: rotate(-180deg);
+      @extend %transition;
+    }
+  }
 }
-
-
-    
-  
-
-
-
-

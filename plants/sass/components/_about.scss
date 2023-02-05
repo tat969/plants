@@ -1,11 +1,28 @@
 .about__content {
   @include flex();
-  padding: 76px 0px 60px 0px;
+  padding: 74px 0px 60px 0px;
+
+  @include media-content {
+    flex-direction: column;
+    max-height: 780px;
+    padding: 40px 0 0;
+  }
+
+  @include media-mobile {
+    padding: 26px 0 35px;
+  }
 }
 
 .about__info {
   max-width: 59.5rem;
   padding: 0px 0px 0px 58px;
+
+  @include media-content {
+    max-width: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
 
 
 
@@ -14,15 +31,37 @@
 
 .about__info-title {
   max-width: 46.3rem;
-  //padding-top: 25px;
   margin-top: -10px;
   padding-bottom: 23px;
   font-size: 3.6rem;
   line-height: 4.9rem;
+  
 
   .heading-colored {
     color: $color-brand;
   }
+
+  @include media-content {
+    margin-top: -5px;
+    margin-left: 100px ;
+    font-size: 3.5rem;
+    position: absolute;
+  }
+
+  @include media-tablet {
+    margin-left: 0;
+    @include font (25px, normal, 400, 30px);
+  }
+
+  @include media-mobile {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+
+  @include media-mobile-small {
+    margin: 0;
+  }
+
 }
 
 .about__info-text {
@@ -30,6 +69,18 @@
   color: $color-text-primary;
   padding-top: 10px;
   text-align: left;
+
+  @include media-content {
+    padding-top: 140px;
+    font-size: 2rem;
+    line-height: 30px;
+  }
+
+  @include media-tablet {
+    @include font(15px, normal, 400, 25.3px);
+    padding-top: 80px;
+  }
+
 }
 
 .about-image {
@@ -37,4 +88,23 @@
   width: 46.4rem;
   background-image: url("../assets/images/houseplant.jpg");
   background-repeat: no-repeat;
+
+  @include media-content {
+    background: url("../assets/images/houseplant_tablet.png");
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    margin-left: 210px;
+  }
+
+  @include media-tablet {
+    background: url("../assets/images/houseplant_mobile.png");
+    background-repeat: no-repeat;
+  }
+
+  @include media-mobile {
+    width: 150px;
+    height: 147px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
